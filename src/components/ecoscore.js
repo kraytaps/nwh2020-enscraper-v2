@@ -71,7 +71,11 @@ window.onload = function(){
         alert("Ecoscore is: " + ecoscore + "\n" + "Your chosen item contains: " + unique[0] + "\n" + "Disposal instructions: " + instructions);
     }
     else{
-        alert("No material found");
+        
     }
 
 }
+
+// export default {
+//     ecoscore
+// }
