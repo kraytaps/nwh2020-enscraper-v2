@@ -5,6 +5,7 @@ import Router from "vue-router";
 // component imports
 import ScraperWindow from "../components/ScraperWindow.vue";
 
+
 Vue.use(Router);
 
 export default new Router({
