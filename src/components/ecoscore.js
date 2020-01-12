@@ -1,3 +1,4 @@
+
 window.onload = function(){
     var materials = [
         "cotton", "Cotton",
@@ -53,7 +54,7 @@ window.onload = function(){
         }
     }
 
-    if(matches != null  && number_weight != null){
+    if (matches != null  && number_weight != null){
 
         var unique = matches.filter(function(element, index, self){
             return index === self.indexOf(element);
@@ -65,6 +66,7 @@ window.onload = function(){
         ecoscore = parseInt(ecoscore);
 
         var instructions = disposal[position];
+        
 
         alert("Ecoscore is: " + ecoscore + "\n" + "Your chosen item contains: " + unique[0] + "\n" + "Disposal instructions: " + instructions);
     }

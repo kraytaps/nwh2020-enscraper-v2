@@ -1,13 +1,13 @@
 <template>
   <!-- <scraper-window /> -->
   <div id="app">
-    <Helloworld/>
+    <!-- <Helloworld/> -->
     <router-view></router-view>
   </div>
 </template>
 
 <script>
-import HelloWorld from '@/components/HelloWorld.vue'
+// import HelloWorld from '@/components/HelloWorld.vue'
 
 export default {
   data() {
