@@ -16,8 +16,8 @@ export default {
 </script>
 
 <style>
-html {
-  width: 400px;
-  height: 600px;
-}
+  html {
+    width: 400px;
+    height: 600px;
+  }
 </style>

@@ -6,11 +6,16 @@ import "bootstrap/dist/css/bootstrap.css";
 import "bootstrap-vue/dist/bootstrap-vue.css";
 
 import router from "./routes";
+import "../sass/scraper-window.sass";
+import vuetify from "../plugins/vuetify";
+
+// Vue.use(Vuetify);
 
 Vue.use(BootstrapVue)
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
+  vuetify: vuetify,
   router,
   render: h => h(App)
 })
