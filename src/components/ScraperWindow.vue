@@ -1,7 +1,9 @@
 <template>
   <v-app id="app-container">
     <v-img src="../assets/grad-head.svg" class="grad-head-img" max-height="200" position="top center"></v-img>
+    <p class="scraper-title">Environment Scraper</p>
     <v-btn class="scrape-btn" @click="scrapeWindow()" dark>START SCRAPING</v-btn>
+    <v-input>TEST</v-input>
   </v-app>
 </template>
 
