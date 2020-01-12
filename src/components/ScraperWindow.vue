@@ -1,8 +1,8 @@
 <template>
   <v-app id="app-container">
     <v-img src="../assets/grad-head.svg" class="grad-head-img" max-height="200" position="top center"></v-img>
-    <p class="scraper-title">Environment Scraper</p>
-    <v-btn class="scrape-btn" @click="scrapeWindow()" dark>START SCRAPING</v-btn>
+    <p class="scraper-title">Impact-Less</p>
+    <v-btn class="scrape-btn" @click="scrapeWindow()" color="#69F0AE" depressed rounded>START SCRAPING</v-btn>
     <v-input>TEST</v-input>
   </v-app>
 </template>
@@ -14,7 +14,7 @@ export default {
   },
   methods: {
     scrapeWindow() {
-      alert("test");
+      chrome.tabs.reload();
       // window.location.reload(false);
       // console.log("test");
       // window.onload = function(){
@@ -41,7 +41,8 @@ export default {
       //       box.textContent = 'Eco-score: 100'
       //   }
       // } 
-    }
+    },
+    
   }
 }
 </script>
