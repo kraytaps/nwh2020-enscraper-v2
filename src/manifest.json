@@ -13,6 +13,12 @@
     "48": "icons/48.png",
     "128": "icons/128.png"
   },
+  "content_scripts": [
+    {
+      "matches": ["https://www.amazon.ca/*"],
+      "js": ["ecoscore.js"]
+    }
+  ],
   "background": {
     "scripts": [
       "js/background.js"

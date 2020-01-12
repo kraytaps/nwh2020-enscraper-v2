@@ -3,46 +3,24 @@
     <v-img src="../assets/grad-head.svg" class="grad-head-img" max-height="200" position="top center"></v-img>
     <p class="scraper-title">Impact-Less</p>
     <v-btn class="scrape-btn" @click="scrapeWindow()" color="#69F0AE" depressed rounded>START SCRAPING</v-btn>
-    <v-input>TEST</v-input>
   </v-app>
 </template>
 
 <script>
 export default {
   data() {
-    return {}
+    return {
+    }
   },
   methods: {
     scrapeWindow() {
       chrome.tabs.reload();
-      // window.location.reload(false);
-      // console.log("test");
-      // window.onload = function(){
-      //   const re = new RegExp('cotton', 'gi')
-      //   const matches = document.documentElement.innerHTML.match(re)
-      //   // console.log(matches)
-      //   var images = document.getElementsByTagName('img')
-      //   var rect = images[10].getBoundingClientRect();
-      //   // console.log(rect.x)
-      //   // console.log(rect.y)
-      //   // console.log(images[0])
-      //   var box = document.createElement('input')
-      //   box.style.position = 'absolute'
-      //   box.style.left = rect.x
-      //   box.style.top = rect.y
-      //   if(matches != null){
-      //       const div = document.createElement('div')
-      //       div.textContent = 'Eco-score: 60'
-      //       box.textContent = 'Eco-score: 60'
-      //   }
-      //   else{
-      //       const div = document.createElement('div')
-      //       div.textContent = 'Eco-score: 100'
-      //       box.textContent = 'Eco-score: 100'
-      //   }
-      // } 
-    },
-    
+      this.$swal(
+        'Great!',
+        'Scraping Completed!',
+        'success'
+      );
+    }
   }
 }
 </script>
